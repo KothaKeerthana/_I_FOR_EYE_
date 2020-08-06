@@ -1,0 +1,69 @@
+
+body{
+  background-image: url('https://i.pinimg.com/originals/fc/df/12/fcdf12ab3c0e48d7908ffc9a78fe5c93.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: 'Numans', sans-serif;
+  }
+
+  .container{
+    background-image: url('https://i.pinimg.com/originals/fc/df/12/fcdf12ab3c0e48d7908ffc9a78fe5c93.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  align-content: center;
+  }
+
+  .card{
+  height: 5000px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(0,0,0,0.5) !important;
+  }
+
+
+  .card-header h3{
+  color: white;
+  }
+
+
+
+  .input-group-prepend span{
+  width: 50px;
+  background-color: #FFC312;
+  color: black;
+  border:0 !important;
+  }
+
+  input:focus{
+  outline: 0 0 0 0  !important;
+  box-shadow: 0 0 0 0 !important;
+
+  }
+
+
+  .add_btn{
+  color: black;
+  background-color: #FFC312;
+  width: 100px;
+  }
+
+  .add_btn:hover{
+  color: black;
+  background-color: white;
+  }
+
+  .links{
+  color: white;
+  }
+
+  .links a{
+  margin-left: 4px;
+  }
+
+  h5{
+     color: antiquewhite;
+
+  }

@@ -1,0 +1,140 @@
+<div class="container">
+  <div class="d-flex justify-content-center h-100">
+    <div class="card">
+      <div class="card-header">
+        <h3>Add_BOOK</h3>
+
+      </div>
+      <div class="card-body">
+        <form (submit)="bookupload(b)" #b="ngForm">
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Book Title" name="title" id="title" ngModel required>
+
+          </div>
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Author" name="author" id="author" ngModel required>
+
+          </div>
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Genre" name="genre" id="Genre" ngModel required>
+
+
+          </div>
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Language" name="language" id="language" ngModel
+              required>
+
+          </div>
+
+
+
+          <h5 class="mt-1">Uplaod Book(IMAGE)</h5> -->
+
+          <div class="file-field mt-2">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+
+              <input type="file" name="imageUrl" class="form-control" (change)="showPreview($event)">
+
+              <br>
+
+            </div>
+
+          </div>
+          <div class="form-group ">
+            <input type="submit" value="Add_Book" class="btn justify-content-center add_btn">
+        </div>
+
+        </form>
+      </div>
+      <div class="card-footer">
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<form>
+  <div class="container">
+      <div class="jumbotron">
+          <h2>Register Property</h2>
+          <br>
+          <p>Please fill this form to register the property</p>
+
+          <hr>
+
+          <label for="pname"><b>Book Title</b></label><br>
+          <input type="text" placeholder="Book Title" name="bname" id="pname" required ngModel><br>
+
+          <label for="location"><b>Book Author</b></label><br>
+          <input type="text" placeholder="Author" name="author" id="bauthor" required ngModel><br>
+
+          <label for="rent"><b>Bppk Grene</b></label><br>
+          <input type="text" placeholder="grene" name="grene" id="grene" required ngModel><br>
+          <br>
+
+           <label for="leasetime"><b>Property Lease Time</b></label><br>
+          <input type="text" placeholder="Leasetime (In Months)" name="leasetime" id="leasetime" required ngModel><br>
+
+         <button (click)="save()">Save</button>
+
+
+          <div class="text-center">
+              <button type="submit" class="bookadd" >Add_Book</button>
+          </div>
+
+      </div>
+  </div>
+</form> -->

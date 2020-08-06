@@ -1,0 +1,41 @@
+<div class="container mt-5">
+
+  <div class="row">
+  <div class="card-deck" *ngFor="let p of details">
+    <div class="card promoting-card">
+
+      <div class="card-body d-flex flex-row">
+        <div>
+          <h4 class="card-title font-weight-bold mb-2">{{p.payload.val()["title"]}}</h4>
+          <!--  <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p>-->
+        </div>
+      </div>
+
+      <!-- Card image -->
+      <div class="view overlay">
+        <img class="card-img-top rounded-0"
+          src="{{p.payload.val()['imageUrl']}}"
+          alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <!-- Card content -->
+      <div class="card-body">
+        <a href="#" class="btn btn-warning">View</a>
+        <!-- <audio controls>
+          <source src="horse.ogg" type="audio/ogg">
+          <source src="horse.mp3" type="audio/mpeg">
+        </audio> -->
+        <div>
+          <button (click)="delete(p.key)">REMOVE</button>
+          <button (click)="updatebook(p.key,p)">UPDATE</button>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+</div>
+</div>
